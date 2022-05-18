@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="PropertyDetailsPage.css" type="text/css" />
+
+    <script type="text/javascript" src="PropertyDetailsPage.js"></script>
+
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main class="menu">
+        <section class="first-section">
+            <header>
+                <a href="#" style="display:inline-block;"><img src="icons/Chevron-back.svg" alt="back" width="15rem"
+                        height="13rem;">Back</a>
+            </header>
+            <section class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <figure class="mySlides fade" style="display:block;">
+                    <figcaption class="numbertext">1 / 4</figcaption>
+                    <img src="images\resisezhouse2.jpg" style="width:100%">
+                    <figcaption class="text">Exterior</figcaption>
+                </figure>
+
+                <figure class="mySlides fade">
+                    <figcaption class="numbertext">2 / 4</figcaption>
+                    <img src="images\resbedroom.jpg" style="width:100%;">
+                    <figcaption class="text">Bedroom</figcaption>
+                </figure>
+
+                <figure class="mySlides fade">
+                    <figcaption class="numbertext">3 / 4</figcaption>
+                    <img src="images\reskitchen.jpg" style="width:100%">
+                    <figcaption class="text">Kitchen</figcaption>
+                </figure>
+                <figure class="mySlides fade">
+                    <figcaption class="numbertext">4 / 4</figcaption>
+                    <img src="images\respool.jpg" style="width:100%">
+                    <figcaption class="text">Pool</figcaption>
+                </figure>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <br>
+
+            <!-- The dots/circles -->
+            <section class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </section>
+
+        </section>
+        <section class="article-container">
+            <section class="property-details">
+                <article>
+                    <p class="price">R7 00000 </p>
+                    <p>2 Bedroom apartment in Edenvale</p>
+                    <address>Address: 2 richmond avenue, Edenvale, Johannesburg</address>
+                    <ul class="details-list">
+                        <li >
+                            <img src="icons\bed-icon.svg"><span class="feature">2 Bedrooms</span>
+                        </li>
+                        <li >
+                            <img src="icons\bathtub-icon.svg"><span class="feature">2 Bathrooms</span>
+                        </li>
+
+                    </ul>
+
+                </article>
+
+                <article class="icon-wrapper">
+                    <p class="description">Description</p>
+
+                    <p>2 Bedroom 1 Bathroom Ground floor Apartment with Garden in secure complex</p>
+
+                    <p>Inviting Offers From R700 000</p>
+
+                    <p>Owner Asking R820 000</p>
+
+
+
+                    <p>Situated in a Secure Complex in Richmond, this Central suburb gives its residence quick access to
+                        Local Amenities, Schools and Joburg hotspots.
+
+                        Walking distance to UJ (2km) and Wits (3km), restaurant within and grocery shop a stone throws
+                        away.
+
+                        This apartment is most suitable for Young Professional Couple, Student or Investors.</p>
+
+                    <p>Don't Delay Call Me Today!</p>
+
+
+
+
+
+                </article>
+                <article>
+                    <p class="features">Features</p>
+
+                    <ul class="feature-details-list">
+                        <li>
+                            <img src="icons\tick.svg"><span class="feature-styles">2 Bedrooms</span>
+                        </li>
+                        <li>
+                            <img src="icons\tick.svg"><span class="feature-styles">2 Bathrooms</span>
+                        </li>
+                        <li >
+                            <img src="icons\tick.svg"><span class="feature-styles">1 Kitchen</span>
+                        </li>
+                        <li >
+                            <img src="icons\tick.svg"><span class="feature-styles">3 Parkings</span>
+                        </li>
+                        <li >
+                            <img src="icons\tick.svg"><span class="feature-styles">1 Pool</span>
+                        </li>
+                        <!-- <li>
+                            <img src="icons\tick.svg"><span class="feature-styles">2 Bedrooms</span>
+                        </li>
+                        <li style="padding-top: 1rem">
+                            <img src="icons\tick.svg"><span class="feature-styles">2 Bathrooms</span>
+                        </li>
+                        <li style="padding-top: 1rem">
+                            <img src="icons\tick.svg"><span class="feature-styles">1 Kitchen</span>
+                        </li>
+                        <li style="padding-top: 1rem">
+                            <img src="icons\tick.svg"><span class="feature-styles">3 Parkings</span>
+                        </li>
+                        <li style="padding-top: 1rem">
+                            <img src="icons\tick.svg"><span class="feature-styles">1 Swimming Pool</span>
+                        </li> -->
+
+                    </ul>
+
+                </article>
+            </section>
+            <section class="agent-contacts">
+                <article>
+                    <p class="contact-heading">Contact Agent</p>
+                    <p class="agent-name">Khanyi Mali</p>
+                    <p class="agent-number1">079568212</p>
+                    <p class="agent-number2">075622333</p>
+
+                    <form>
+                        <label>Your Name</label><br />
+                        <input class="form-input" type="text" required><br /><br />
+
+
+                        <label>Your E-mail</label><br />
+                        <input class="form-input" type="email"><br /><br />
+
+                        <label>Your Mobile Number</label><br />
+                        <input class="form-input" type="text"><br /><br />
+
+                        <label>Your Message</label><br />
+                        <textarea type="text"></textarea>
+
+                        <button class="submit-button" type="submit">Send Message</button>
+
+
+                    </form>
+
+                </article>
+            </section>
+
+        </section>
+
+
+    </main>
+</body>
+
+</html>
