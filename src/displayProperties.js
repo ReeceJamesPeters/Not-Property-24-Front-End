@@ -1,16 +1,17 @@
 const displayProperties = (properties, element) => {
     element.innerHTML = properties.map((p) => {
-        const {PropertyID,ImageURL} = p;
+        const {PropertyID,ImageURL,Price,PropertyName,Street,NoOfBedrooms,NoOfBathrooms} = p;
            return `<div class="Propertycard">
-            <img src="${ImageURL}" alt="House" style="width:100%">
+                <a href="PropertyDetailsPage.html?id=${PropertyID}">
+                    <img src="${ImageURL}" alt="House-Image" style="width:100%">
+                </a>
                 <div class="PropertyInfo">
-                    <h3><b>${PropertyID}</b></h3>
-                    <p><b> 4 Bedroom House in Clifton</b></p>
-                    <p>82 Sutherland Road, Clifton</p>
+                    <h3><b>R ${Price}</b></h3>
+                    <p><b>${PropertyName}</b></p>
+                    <p>${Street}</p>
                     <row class="icons">
-                        <i class="fa fa-home" aria-hidden="true"> 4 </i>
-                        <i class="fa fa-bath" aria-hidden="true"> 3 </i>
-        
+                        <i class="fa fa-home" aria-hidden="true">${NoOfBedrooms}</i>
+                        <i class="fa fa-bath" aria-hidden="true">${NoOfBathrooms}</i>
                     </row>
                 </div>
         </div>` 
