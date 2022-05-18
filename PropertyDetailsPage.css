@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box
+}
+
+header {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    background-color: #003F88;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: Helvetica, Verdana, sans-serif;
+    margin: 0;
+    color: #515b6d;
+    background-color: #f6f6f6;
+}
+
+.first-section{
+    position:relative; margin: auto;
+}
+.details-list{
+    display: flex;
+    padding: 0;
+    /* justify-content: space-between; */
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.mySlides {
+    display: none;
+    margin: auto;
+}
+.feature-details-list{
+    /* list-style-type: none; 
+    padding-left: 0.0625rem; */
+    display: flex;
+    /* width: 50%;
+    margin: 0 auto; */
+    padding: 0;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.feature-styles{
+    color: #003F88; 
+    padding-left: 5px;
+}
+.price{
+    font-weight:bold;
+    color:#003F88; 
+    font-size: large;
+}
+.feature{
+    padding-left: 5px;
+}
+.description{
+    font-size: 1rem; 
+    font-weight: bold; 
+}
+.features{
+    font-size: 1rem; 
+    font-weight: bold;
+}
+.contact-heading{
+    font-size: 1rem; 
+    font-weight: bold; 
+    text-align: center;
+}
+.agent-name{
+    font-size: 0.9rem; 
+    font-weight: bold;
+    text-align: center;
+}
+.agent-number1{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.agent-number2{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.form-input{
+    width:-webkit-fill-available;
+    border:1px solid #d8dce3; 
+    padding: 14px; font-size: 15px;
+}
+textarea{
+    width:-webkit-fill-available; height: 150px; border:1px solid #d8dce3; padding: 14px; font-size: 15px;
+}
+img {
+    vertical-align: middle;
+}
+
+figure {
+    margin: auto;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    background-color: gray;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dots-container {
+    text-align: center;
+
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+
+}
+li{
+    margin: 5px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.property-details {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-details,
+article {
+    min-width: 60%;
+}
+
+.agent-contacts {
+    max-width: 40%;
+
+    border-radius: 0.3rem;
+}
+
+.agent-contacts,
+article {
+    min-width: 40%;
+}
+
+article {
+    padding: 20px;
+    margin: 10px;
+
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: 1px solid #d8dce3
+}
+
+.article-container {
+
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    flex-flow: row wrap;
+}
+address{
+    color: #003F88;
+}
+.submit-button{
+    background-color: #003F88; 
+    border-radius: 0.3rem; 
+    border: none ; 
+    padding: 0.25rem; 
+    color: white; 
+    text-align:center; 
+    margin-top: 5px; 
+    width:-webkit-fill-available; 
+    height: 40px; 
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 1px solid #003F88;
+}
+
+textarea:focus {
+    outline: 1px solid #003F88;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 690px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+
+    .agent-contacts,
+    .property-details {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        width: -webkit-fill-available;
+    }
+
+    textarea {
+        width: -webkit-fill-available;
+    }
+
+    .submit-button {
+        width: -webkit-fill-available;
+    }
+
+    .article-container {
+        flex-direction: column;
+    }
+
+    address {
+        width: -webkit-fill-available;
+    }
+
+    body {
+        font-size: 11px;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .submit-button {
+        height: 1.5rem;
+
+    }
+    .form-input{
+        width:-webkit-fill-available;
+        border:1px solid #d8dce3; 
+        padding: 8px;
+         font-size: 11px;
+    }
+    textarea{
+        font-size: 12px;
+    }
+    .feature-details-list{
+        flex-direction: column;
+        
+    }
+    ul > li> img{
+        width: 15px;
+        height: 15px;
+    }
+    .details-list{
+        flex-direction: column;
+        
+    }
+}
