@@ -7,7 +7,7 @@ html{
 body {
     margin: auto;
     
-    height: 150vh;
+    height: auto;
     background-color: #E5E5E5;
     overflow-y: scroll;
     
@@ -257,11 +257,10 @@ form {
     display: flex; 
     flex-direction: column;
     line-height: 100px;
-    position: relative;
+    /* position: absolute; */
     background: rgb(194, 194, 194);
     display: flex; 
     line-height: 100px;
-    position: fixed;
     background: rgb(194, 194, 194);
     bottom:0px;
     width: 100%;
