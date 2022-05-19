@@ -48,15 +48,20 @@
     </header>
         
             <row>
-             <input type="text" class="Locations" placeholder=" Search a city, suburb or web reference">
-             <button type="submit" class="SubmitSearch"><i class="fa fa-search"></i></button>
+                <!-- <a href="PropertyDetailsPage.html?id=${PropertyID}">
+                    <img src="${ImageURL}" alt="House-Image" style="width:100%">
+                </a> -->
+             <input type="text" class="Locations" id="city" placeholder=" Search a city, suburb or web reference">
+             <!-- <a href="Listings.html"> -->
+                <button type="submit" class="SubmitSearch"><i class="fa fa-search"></i></button>
+            <!-- </a> -->
             </row>
             <br>
             <div style="margin-top: 10px;">
                 <row style="padding: 5px;">
                     
                     <!--Property type select list-->
-                    <select class=" filters">
+                    <select class=" filters" id="PropertyType">
                         <option value="" disabled selected> Property Type </option>
                       
                         <option value="2"> House </option>
@@ -68,11 +73,11 @@
                     <!-- Min price select list-->
                     <input type="number" id="MinPrice" placeholder="Min Price" min="1" class="InputBox">
                     <!--Max Price select list--> 
-                    <input type="number" id="MinPrice" placeholder="Max Price" min="1" class="InputBox">
+                    <input type="number" id="MaxPrice" placeholder="Max Price" min="1" class="InputBox">
                     <!--Bedrooms select list-->
-                    <input type="number" id="MinPrice" placeholder="Bedrooms" min="1" class="InputBox">
+                    <input type="number" id="Bedrooms" placeholder="Bedrooms" min="1" class="InputBox">
                     <!--Bathrooms select list-->
-                    <input type="number" id="MinPrice" placeholder="Bathrooms" min="1" class="InputBox">
+                    <input type="number" id="Bathrooms" placeholder="Bathrooms" min="1" class="InputBox">
 
                 </row>
             </div>
