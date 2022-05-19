@@ -3,7 +3,7 @@ import { setStorageItem,getStorageItem } from "./utils.js";
 let props = getStorageItem('properties');
 
 const fetchFrontImage = async (propID) => {
-    const response = await fetch(`https://notproperty24.herokuapp.com/api/images/${propID}`).catch((err) => console.log(err));
+    const response = await fetch(`http://ec2-13-245-85-93.af-south-1.compute.amazonaws.com:5001/api/images/${propID}`).catch((err) => console.log(err));
     if (response){
         const img = await response.json();
         return img[0].ImageURL;
