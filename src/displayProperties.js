@@ -1,6 +1,16 @@
+
+// const fetchImages = async () => {
+//     const response = await fetch(`http://localhost:5001/api/images/${}`).catch((err) => console.log(err));
+//     if (response){
+//         const img = await response.json();
+//         return img;
+//     }
+//     return response;
+// };
+
 const displayProperties = (properties, element) => {
     element.innerHTML = properties.map((p) => {
-        const {PropertyID,ImageURL,Price,PropertyName,Street,NoOfBedrooms,NoOfBathrooms} = p;
+        const {PropertyID,Price,PropertyName,Street,NoOfBedrooms,NoOfBathrooms,ImageURL} = p;
            return `<div class="Propertycard">
                 <a href="PropertyDetailsPage.html?id=${PropertyID}">
                     <img src="${ImageURL}" alt="House-Image" style="width:100%">
@@ -15,7 +25,7 @@ const displayProperties = (properties, element) => {
                     </row>
                 </div>
         </div>` 
-    })
+    }).join('')
     
 };
 
