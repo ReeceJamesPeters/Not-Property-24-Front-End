@@ -130,9 +130,11 @@ form {
     margin-right: 30px; 
     background-color: #003F88; 
     color: white; 
+    font-size: larger;
     border-radius: 5px;
     height: 30px;
     font-family:'Arial', sans-serif;
+
 }
 
 
@@ -142,7 +144,7 @@ form {
     background-color: whitesmoke;
     margin-left: 0%;
     margin-right: 0%;
-    border-color: black;
+    border-color: white;
     width: 80px;
     height: 40px;
     border-radius: 5px;
@@ -164,7 +166,7 @@ form {
 }
 
 .Searchbox {
-    width: 500px;
+    width: 550px;
     height: 120px;
     background: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -181,7 +183,7 @@ form {
 }
 
 .Locations {
-    width: 440px;
+    width: 480px;
     height: 30px;
     background-color: #F0F1F4;;
     border-radius: 10px;
@@ -205,7 +207,8 @@ form {
 .filters {
     background-color: #F0F1F4;
     border-radius: 10px;
-    margin: 2px;
+    margin: 4px;
+    padding: 3px;
 }
 
 .Properties {
