@@ -1,6 +1,6 @@
 
 const displayProperties = (properties, element) => {
-    element.innerHTML = properties.map((p) => {
+    let x = properties.map((p) => {
         const {PropertyID,Price,PropertyName,Street,NoOfBedrooms,NoOfBathrooms,ImageURL} = p;
            return `<div class="Propertycard">
                 <a href="PropertyDetailsPage.html?id=${PropertyID}">
@@ -16,7 +16,13 @@ const displayProperties = (properties, element) => {
                     </row>
                 </div>
         </div>` 
-    }).join('')
+    })
+    let htmlThing = "";
+    for (var c=0; c<3; c++){
+        htmlThing += x[c];
+    }
+
+    element.innerHTML = htmlThing;
     
 };
 
