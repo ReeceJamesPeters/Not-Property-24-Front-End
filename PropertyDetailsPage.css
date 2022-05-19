@@ -111,6 +111,7 @@ figure {
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
+    max-height: 950px;
     position: relative;
     margin: auto;
     background-color: gray;

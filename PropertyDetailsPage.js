@@ -21,7 +21,7 @@ const agentNumber = getElement('.agent-number1');
 const agentEmail = getElement('.agent-number2');
 
 const fetchAllImages = async (id) => {
-  const response = await fetch(`http://localhost:5001/api/images/${id}`).catch((err) => console.log(err));
+  const response = await fetch(`https://notproperty24.herokuapp.com/api/images/${id}`).catch((err) => console.log(err));
   if (response){
       const img = await response.json();
       return img;
@@ -35,9 +35,7 @@ const populateImages = (imgs, element) => {
   element.innerHTML = imgs.map((image) => {
       const {PropertyImageID,Description,PropertyID,ImageURL} = image;
          return `<figure class="mySlides fade" style="display:block;">
-         <figcaption class="numbertext">1 / 4</figcaption>
-         <img src="${ImageURL}" style="width:100%">
-         <figcaption class="text">Exterior</figcaption>
+         <img src="${ImageURL}" style="width:100%;height:500px">
      </figure>` 
   })
   
@@ -86,7 +84,7 @@ window.addEventListener('DOMContentLoaded', async function () {
   slideShowContainer.innerHTML += ` <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>`
 
-  const response = await fetch(`http://localhost:5001/api/property/${id}`);
+  const response = await fetch(`https://notproperty24.herokuapp.com/api/property/${id}`);
   if(response.ok){
     const res = await response.json();
     const [x,y] = res;

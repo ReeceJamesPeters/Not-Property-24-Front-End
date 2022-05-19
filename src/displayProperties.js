@@ -1,13 +1,4 @@
 
-// const fetchImages = async () => {
-//     const response = await fetch(`http://localhost:5001/api/images/${}`).catch((err) => console.log(err));
-//     if (response){
-//         const img = await response.json();
-//         return img;
-//     }
-//     return response;
-// };
-
 const displayProperties = (properties, element) => {
     element.innerHTML = properties.map((p) => {
         const {PropertyID,Price,PropertyName,Street,NoOfBedrooms,NoOfBathrooms,ImageURL} = p;

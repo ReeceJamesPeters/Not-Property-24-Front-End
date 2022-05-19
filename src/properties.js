@@ -3,7 +3,7 @@ import { setStorageItem,getStorageItem } from "./utils.js";
 let props = getStorageItem('properties');
 
 const fetchFrontImage = async (propID) => {
-    const response = await fetch(`http://localhost:5001/api/images/${propID}`).catch((err) => console.log(err));
+    const response = await fetch(`https://notproperty24.herokuapp.com/api/images/${propID}`).catch((err) => console.log(err));
     if (response){
         const img = await response.json();
         return img[0].ImageURL;
@@ -42,5 +42,3 @@ const setupprops = async (properties) => {
 
 console.log(props);
 export { props, setupprops };
-
-fetchFrontImage(2);
