@@ -35,7 +35,7 @@ document.querySelector(".SubmitSearch").addEventListener("click", () => {
 }
     
     console.log(filteredProps);
-    displayProperties(filteredProps, getElement('.Properties'));
+    displayPropertiesFilters(filteredProps, getElement('.Properties'));
 });
 
 window.addEventListener('DOMContentLoaded', init);
