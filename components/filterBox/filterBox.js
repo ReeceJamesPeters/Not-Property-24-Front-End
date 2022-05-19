@@ -12,52 +12,52 @@ template.innerHTML = `
             <form>
                 <section class="form-header">
                     <input type="text" placeholder="Search">
-                    <button type="submit"></button>
+                    <button type="button" class="SubmitSearch"></button>
                 </section>
                 
                 <section class="form-footer">
-                    <select class="filter-item">
+                    <select id="PropertyType" class="filter-item">
                         <option value="" disabled selected> Property Type </option>
-                        <option> House </option>
-                        <option> Apartment </option>
-                        <option> Townhouse </option>
+                        <option value="2"> House </option>
+                        <option value="1">  Apartment </option>
+                        <option value="3"> Townhouse </option>
                     </select>
 
                     <section class="col-holder">
-                        <select class="filter-item col" >
+                        <select id="MinPrice" class="filter-item col" >
                             <option value="" disabled selected> Min Price </option>
-                            <option> 100 000</option>
-                            <option> 200 000</option>
-                            <option> 300 000</option>
-                            <option> 400 000</option>
-                            <option> 500 000</option>
+                            <option value="100000"> 100 000</option>
+                            <option value="500000"> 500 000</option>
+                            <option value="1000000"> 1 000 000</option>
+                            <option value="1500000"> 1 500 000</option>
+                            <option value="2000000"> 2 000 000</option>
                         </select>
-                        <select class="filter-item col">
+                        <select id="MaxPrice" class="filter-item col">
                             <option value="" disabled selected> Max Price </option>
-                            <option> 1000 000 </option>
-                            <option> 2000 000 </option>
-                            <option> 3000 000 </option>
-                            <option> 4000 000 </option>
-                            <option> 5000 000 </option>
+                            <option value="1000000"> 1 000 000</option>
+                            <option value="2000000"> 1 000 000</option>
+                            <option value="3000000"> 3 000 000</option>
+                            <option value="4000000"> 4 000 000</option>
+                            <option value="5000000"> 5 000 000</option>
                         </select>
                     </section>
 
                     <section class="col-holder">
-                        <select class="filter-item col">
+                        <select id="Bedrooms" class="filter-item col">
                             <option value="" disabled selected> Bedrooms </option>
-                            <option> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                            <option> 4 </option>
-                            <option> 5 </option>
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
                         </select>
-                        <select class="filter-item col">
+                        <select id="Bathrooms" class="filter-item col">
                             <option value="" disabled selected> Bathrooms </option>
-                            <option> 1 </option>
-                            <option> 2 </option>
-                            <option> 3 </option>
-                            <option> 4 </option>
-                            <option> 5 </option>
+                            <option value="1"> 1 </option>
+                            <option value="2"> 2 </option>
+                            <option value="3"> 3 </option>
+                            <option value="4"> 4 </option>
+                            <option value="5"> 5 </option>
                         </select>
                     
                     </section>
@@ -71,26 +71,31 @@ template.innerHTML = `
     </section>
 `;
 
-class FilterBox extends HTMLElement {
-  constructor() {
-    super();
+const filterBox = document.getElementById("filter-box");
+filterBox.attachShadow({ mode: "open" });
+filterBox.shadowRoot.appendChild(template.content.cloneNode(true));
 
-    // Shadow DOM
-    this.attachShadow({ mode: "open" });
-    this.shadowRoot.appendChild(template.content.cloneNode(true));
+// console.log(filterBox.shadowRoot);
 
-    const showHeader = this.getAttribute("showHeader");
-    const header = this.shadowRoot.querySelector("header");
-    const mainBox = this.shadowRoot.querySelector(".main-box");
-    if (showHeader && showHeader === "true") {
-      header.style.display = "block";   
-      mainBox.style.alignItems = "start";
-      
-    } else {
-      header.style.display = "none";
-      mainBox.style.alignItems = "center";
-    }
-  }
-}
+// class FilterBox extends HTMLElement {
+//   constructor() {
+//     super();
 
-window.customElements.define("filter-box", FilterBox);
+//     // Shadow DOM
+//     this.attachShadow({ mode: "open" });
+//     this.shadowRoot.appendChild(template.content.cloneNode(true));
+
+//     const showHeader = this.getAttribute("showHeader");
+//     const header = this.shadowRoot.querySelector("header");
+//     const mainBox = this.shadowRoot.querySelector(".main-box");
+//     if (showHeader && showHeader === "true") {
+//       header.style.display = "block";
+//       mainBox.style.alignItems = "start";
+//     } else {
+//       header.style.display = "none";
+//       mainBox.style.alignItems = "center";
+//     }
+//   }
+// }
+
+// window.customElements.define("filter-box", FilterBox);

@@ -80,7 +80,7 @@ input[type="search"]::placeholder {
   color: #bbb;
 }
 
-button[type="submit"] {
+button[type="button"] {
   text-indent: -999px;
   overflow: hidden;
   width: 40px;
@@ -94,7 +94,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:focus,
+button[type="button"]:focus,
 input[type="search"]:focus {
   box-shadow: 0 0 3px 0 #1183d6;
   border-color: #1183d6;
