@@ -34,19 +34,19 @@ document.querySelector(".SubmitSearch").addEventListener("click", () => {
     }
     if (maxprice.value){
         filteredProps = filteredProps.filter((p) => {
-            if (p.Price < maxprice.value)
+            if (p.Price <= maxprice.value)
                 return p;
         });
     }
     if (minprice.value){
         filteredProps = filteredProps.filter((p) => {
-            if (p.Price > minprice.value)
+            if (p.Price >= minprice.value)
                 return p;
         });
     }
     if (city.value){
         filteredProps = filteredProps.filter((p) => {
-            if (p.City < city.value)
+            if (p.City = city.value)
                 return p;
         });
     }

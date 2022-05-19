@@ -18,9 +18,8 @@ const displayProperties = (properties, element) => {
         </div>` 
     })
     let htmlThing = `<div class="Properties">`;
-    let offset = i * 3;
     for (let c = 0; c < 3; c++) {
-      htmlThing += propCards[c + offset];
+      htmlThing += propCards[c ];
     }
     htmlThing += "</div>";
 
@@ -60,7 +59,10 @@ const displayPropertiesFiltered = (properties, element) => {
       htmlThing += `<div class="Properties">`;
       let offset = i * 3;
       for (let c = 0; c < 3; c++) {
-        htmlThing += propCards[c + offset];
+        //   count = c+offset;
+        //   if(count<propCards.length){
+             htmlThing += propCards[c + offset];
+        //   }
       }
       htmlThing += "</div>";
     }
