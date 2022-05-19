@@ -4,7 +4,7 @@ template.innerHTML = `
     @import "/components/filterBox/filterBox.css";
     </style>
     <section class="filter-box">
-        <header>
+        <header class="header">
             <button class="filter-button active-filter-button">Buy</button>
             <button class="filter-button">Rent</button>
         </header>
@@ -75,12 +75,21 @@ class FilterBox extends HTMLElement {
   constructor() {
     super();
 
-    this.showInfo = true;
-
     // Shadow DOM
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
 
+    const showHeader = this.getAttribute("showHeader");
+    const header = this.shadowRoot.querySelector("header");
+    const mainBox = this.shadowRoot.querySelector(".main-box");
+    if (showHeader && showHeader === "true") {
+      header.style.display = "block";   
+      mainBox.style.alignItems = "start";
+      
+    } else {
+      header.style.display = "none";
+      mainBox.style.alignItems = "center";
+    }
   }
 }
 

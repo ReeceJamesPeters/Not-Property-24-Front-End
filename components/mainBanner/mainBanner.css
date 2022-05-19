@@ -1,7 +1,7 @@
 .background {
   display: flex;
   flex-direction: column;
-  background: url(../../assets/BannerImage.png);
+  background: url(../../Assets/BannerImage.png);
   background-position: center;
   background-size: cover;
   position: absolute;
