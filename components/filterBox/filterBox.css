@@ -1,0 +1,137 @@
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+header {
+  width: 166px;
+  background-color: #ffffff;
+}
+
+.filter-button {
+  background: #ffffff;
+  color: #00296b;
+  border-radius: 4px 0px 0px 4px;
+  border: none;
+  width: 80px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+.active-filter-button {
+  background: linear-gradient(0deg, #003f88, #003f88), #003f88;
+  color: #ffffff;
+}
+
+.main-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  min-height: 130px;
+  padding: 16px;
+}
+
+form {
+  color: #555;
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  border-radius: 4px;
+  border-style: hidden;
+}
+
+.form-header {
+  display: flex;
+  max-width: 845px;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: row;
+  padding-top: 16px;
+}
+
+input {
+  height: 40px;
+  width: 100%;
+  background: #f0f1f4;
+  border: none;
+  padding-left: 15px;
+}
+
+button {
+  height: 41px;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+}
+
+input[type="search"]::placeholder {
+  color: #bbb;
+}
+
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: #003f88
+  url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='20px' viewBox='0 0 487.95 487.95' style='enable-background:new 0 0 487.95 487.95;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath fill='%23FFFFFF' d='M481.8,453l-140-140.1c27.6-33.1,44.2-75.4,44.2-121.6C386,85.9,299.5,0.2,193.1,0.2S0,86,0,191.4s86.5,191.1,192.9,191.1 c45.2,0,86.8-15.5,119.8-41.4l140.5,140.5c8.2,8.2,20.4,8.2,28.6,0C490,473.4,490,461.2,481.8,453z M41,191.4 c0-82.8,68.2-150.1,151.9-150.1s151.9,67.3,151.9,150.1s-68.2,150.1-151.9,150.1S41,274.1,41,191.4z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A")
+  no-repeat center;
+  cursor: pointer;
+
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+
+.filter-item {
+  width: 150px;
+  height: 41px;
+  background: #f0f1f4;
+  border-radius: 4px;
+  margin-right: 12px;
+  border-color: #f0f1f4;
+  color: #4b5768;
+  text-align: center;
+}
+
+.col-holder {
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .form-footer {
+    flex-direction: column;
+  }
+  .filter-item {
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .col {
+    width: 50%;
+  }
+
+  .col-holder {
+    display: flex;
+    flex-direction: row;
+  }
+}

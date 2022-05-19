@@ -1,0 +1,54 @@
+.background {
+  display: flex;
+  flex-direction: column;
+  background: url(../../assets/BannerImage.png);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  filter: brightness(50%);
+  z-index: -5;
+  height: 600px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+}
+
+.heading {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+.sub-heading {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+  .heading{
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  .sub-heading{
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
