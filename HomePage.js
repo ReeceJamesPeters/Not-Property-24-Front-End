@@ -6,7 +6,8 @@ import { setupprops, props } from "./src/properties.js";
 const init = async () => {
     const properties = await fetchProperties();
     if (properties){
-        setupprops(properties);
+        await setupprops(properties);
+        console.log(properties);
         displayProperties(props, getElement('.Properties'))
     }
 };
