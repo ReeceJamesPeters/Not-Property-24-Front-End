@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Listings.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<header class="TopNav">
+    <!--Top Navigation bar-->
+    <row>
+        <h1>Properties4u</h1>
+            <nav class="topNav">
+        
+                <a> Buy</a>
+                <a> Rent</a>
+                <a> Sell </a>
+                <a> Contact</a>
+                <a style="color: #003F88 ;"><b>Login</b></a>
+                <button class="SignUpButton">Sign Up</button>
+            </nav>
+    </row>
+</header>
+
+<body>
+    
+        <article class="TopBanner">
+            <h2 class="FirstLine">Property for sale in Northcliff</h2>
+            <p>Property for sale > Gauteng >  Johannesburg > Northcliff</p>
+        </article>
+
+        <section class="TopHalf">
+            <div class="Searchbox">
+            <!-- <header class="SearchHeader">
+                <button class="Typebutton"><b>Buy</b></button>
+                <button class="Typebutton"><b>Rent</b></button>
+            </header> -->
+                
+                    <row>
+                     <input type="text" class="Locations" placeholder=" Search a city, suburb or web reference">
+                     <button type="submit" class="SubmitSearch"><i class="fa fa-search"></i></button>
+                    </row>
+                    <br>
+                    <div style="margin-top: 10px;">
+                        <row style="padding: 5px;">
+                            
+                            <!--Property type select list-->
+                            <select class=" filters">
+                                <option value="" disabled selected> Property Type </option>
+                                <option value="2"> House </option>
+                                <option value="1"> Apartment </option>
+                                <option value="3"> Townhouse </option>
+                                
+                            </select>
+                            
+                            <!-- Min price select list-->
+                            <input type="number" id="MinPrice" placeholder="Min Price" min="1" class="InputBox">
+                            <!--Max Price select list--> 
+                            <input type="number" id="MinPrice" placeholder="Max Price" min="1" class="InputBox">
+                            <!--Bedrooms select list-->
+                            <input type="number" id="MinPrice" placeholder="Bedrooms" min="1" class="InputBox">
+                            <!--Bathrooms select list-->
+                            <input type="number" id="MinPrice" placeholder="Bathrooms" min="1" class="InputBox">
+                        </row>
+                    </div>
+                </div>
+        </section>
+
+        <Section class="SearchDetails">
+            <p class="PropetiesFound"><b>Properties found</b></p>
+        </Section>
+
+        <section>
+            <div class="Properties">
+                <!-- <div class="Propertycard">
+                    <img src="./Assets/HouseHome.jpg" alt="House" style="width:100%">
+                        <div class="PropertyInfo">
+                            <h3><b>R 7 000 000</b></h3>
+                            <p><b> 4 Bedroom House in Clifton</b></p>
+                            <p>82 Sutherland Road, Clifton</p>
+                            <row class="icons">
+                                <i class="fa fa-home" aria-hidden="true"> 4 </i>
+                                <i class="fa fa-bath" aria-hidden="true"> 3 </i>
+
+                            </row>
+                        </div>
+                </div> -->
+        </div>
+        </section>
+
+
+</body>
+
+</html>

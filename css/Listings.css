@@ -10,6 +10,7 @@ body {
     height: 150vh;
     background-color: #E5E5E5;
     overflow-y: scroll;
+    font-family:'Arial', sans-serif;
     
 }
 
@@ -83,49 +84,6 @@ form {
     margin-top: 30px;
 }
 
-.IntroLine {  
-    color: white;
-    font-size: xx-large;
-    text-align: center;
-    margin-top: 200px;
-    font-family:'Arial', sans-serif;
-}
-
-.CatchPhrase {
-    color: white;
-    font-size: large;
-    text-align: center;
-    text-decoration: underline;
-    font-family:'Arial', sans-serif;
-    
-}
-
-
-.BackGroundIMG {
-    background: url(../Assets/HouseHome.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 32px;
-    filter: brightness(50%);
-
-
-
-    position: absolute;
-    height: 700px;
-    left: 0px;
-    right: 0px;
-
-    z-index: -5;
-
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .SignUpButton {
     margin-right: 30px; 
     background-color: #003F88; 
@@ -137,7 +95,33 @@ form {
 
 }
 
+.TopBanner {
+    text-align: center;
+    height: 100px;
+}
 
+.TopHalf {
+    height: 150px;
+    background-color: white;
+}
+
+.Searchbox {
+    width: 100%;
+    height: 150px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 15px;
+    border-radius: 10px;
+   
+    position: absolute;
+
+   text-align: center;
+   
+}
+
+.SearchHeader {
+    margin-bottom: 10px;
+}
 
 .Typebutton {
     color:#003F88;
@@ -153,33 +137,10 @@ form {
     left:40% 
 }
 
-.Typebutton:focus {
-    border-color: #003F88;
-    background-color: #003F88;
-    color: white;
-}
-
 .Typebutton:hover {
     border-color: #003F88;
     background-color: #003F88;
     color: white;
-}
-
-.Searchbox {
-    width: 550px;
-    height: 120px;
-    background: #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 15px;
-    border-radius: 10px;
-    margin-left: -80px;
-    position: absolute;
-   top:40%;
-   left:40%
-}
-
-.TopHalf {
-    margin-bottom: 200px;
 }
 
 .Locations {
@@ -191,6 +152,7 @@ form {
     border: 1px;
     border-style: solid;
     padding: 3px;
+    margin-top: 35px;
 }
 
 .SubmitSearch {
@@ -222,48 +184,15 @@ form {
     
 }
 
-.Properties {
-    display: flexbox;
-    float: left;
-    width: 25%;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.props {
-    margin-top: 230px;
-}
-
-.Propertycard {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    margin-top: 250px;
-    
-  }
-   
-  .PropertyInfo {
-    padding: 2px 16px;
-    background-color: white;
-    font-family:'Arial', sans-serif;
-    padding-bottom: 3px;
-  }
-
-  .icons {
-      color: #003F88;   
-  }
-
-  footer{
-     display: flex; 
-    line-height: 100px;
-    position: fixed;
-    background: rgb(194, 194, 194);
-    bottom:0px;
-    width: 100%;
+.SearchDetails {
     height: 100px;
-    text-align: center; 
-    flex-grow: 1;
-    clear: both;
-  }
+   
+    
+}
 
+.PropetiesFound {
+    float: right;
+    margin-top: 70px;
+    margin-right: 30px;
 
-
-
+}
